@@ -2,12 +2,9 @@
     margin:0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: sans-serif;
+    animation-timeline: view(650px 0px);
 }
-
-html{
-    scroll-behavior: smooth;
-}
-
 
 
 /* Navbar */
@@ -148,7 +145,7 @@ html{
 
 .owl-carousel { 
     animation-name: zoomIn;
-    animation-duration: 1s;
+    animation-duration: 10s;
     animation-timing-function: ease;
 }
 
@@ -213,62 +210,23 @@ html{
     transform: skewY(3deg);
 }
 
-.animate{
+/* .animate, .col-animate, .col-animate1{
     margin-top: 7% !important;
-    position: relative;
     animation-name: top !important;
-    animation-duration: 1s !important;
+    animation-duration: 10s !important;
     animation-timing-function: ease !important;
-    animation-fill-mode: forwards !important;
+    
 }
 
 @keyframes top{
     from{
-        transform: translateY(150px);
+        transform: translateY(400px);
     }
     to{
         transform: translateY(0px); 
     }
-}
+} */
 
-.col-animate{
-    position: relative;
-    animation-name: rows !important;
-    animation-duration: 1s !important;
-    animation-timing-function: ease !important;
-    animation-fill-mode: forwards !important;
-    animation-iteration-count: 1;
-}
-
-@keyframes rows{
-    from{
-        transform: translateY(150px);
-    }
-    to{
-        transform: translateY(0px); 
-    }
-}
-
-.col-animate1{
-    margin-top: 6% !important;
-    position: relative;
-    animation-name: row-down !important;
-    animation-duration: 1s !important;
-    animation-delay: 0s;
-    animation-timing-function: ease !important;
-    animation-fill-mode: forwards !important;
-    animation-iteration-count: 1;
-    display: block !important;
-}
-
-@keyframes row-down{
-    from{
-        transform: translateY(250px);
-    }
-    to{
-        transform: translateY(0px); 
-    }
-}
 
 .icon{
     color: rgb(215, 5, 5);
@@ -289,7 +247,7 @@ html{
     border:none;
 }
 
-.para{
+.paras{
     color:rgba(70, 72, 72, 0.999);
     padding-top: 15px;
 }
@@ -299,10 +257,10 @@ html{
 
 /* Counting */
 
-.count{
+.count, .animate{
     text-align: center;
     animation-name: count-animate !important;
-    animation-duration: 1s !important;
+    animation-duration: 10s !important;
     animation-timing-function: ease !important;
     animation-fill-mode: forwards !important;
     margin-top: 6% !important;
@@ -341,10 +299,13 @@ html{
     margin-top: 10% !important;
 }
 
-.boxs-animate{
+
+/* =======Animation========= */
+.boxs-animate, .boxs-animates, .col-animate, .col-animate1, .service-animate, .service-para, .service-col1, .service-col2, .service-col3,
+.port-animate, .port-para, .select, .port-animate1, .port-animate2, .port-animate3, .testimonial-animate,
+.pricing-animate{
     animation-name: boxs-animate !important;
     animation-duration: 1s !important;
-    animation-delay: 0.1s;
     animation-timing-function: ease !important;
     animation-fill-mode: forwards !important;
 }
@@ -357,6 +318,10 @@ html{
         transform: translateY(0px); 
     }
 }
+
+
+
+/* ========Animation========= */
 
 .box{
     border:1px solid rgb(125, 121, 121);
@@ -371,9 +336,13 @@ html{
     font-size: 35px;
 }
 
-.box:hover{
+.box1{
     background-color: rgb(215, 5, 5);
     color:white;
+}
+
+.box:hover{
+    color: rgb(215, 5, 5);
 }
 
 
@@ -381,24 +350,6 @@ html{
 
 .content{
     color:#2b2d2ddf;
-}
-
-.boxs-animates{
-    animation-name: boxs-animates !important;
-    animation-duration: 1s !important;
-    animation-delay: 0.1s;
-    animation-timing-function: ease !important;
-    animation-fill-mode: forwards !important;
-    font-size: 16.5px;
-}
-
-@keyframes boxs-animates{
-    from{
-        transform: translateY(400px);
-    }
-    to{
-        transform: translateY(0px); 
-    }
 }
 
 
@@ -416,10 +367,13 @@ html{
     transform: skewY(3deg);
 }
 
+.text-light:hover{
+    font-style: underline;
+}
+
 .underline{
     color:rgb(215, 5, 5);
-    font-size: 20px;
-    font-weight: 900;
+    margin-top: -17px;
 }
 
 .ser-row{
@@ -427,6 +381,7 @@ html{
     justify-content: space-around;
     padding:25px;
     background-color: rgba(53, 49, 49, 0.608);
+    border-radius: 5px;
 }
 
 .ico{
@@ -434,9 +389,163 @@ html{
 }
 
 
-
 /* Portfolio */
 
 .port-para{
     font-size: 16.5px;
 }
+
+.select{
+    display: flex !important;
+    margin-left:40%;
+}
+
+.para-all{
+    background-color: rgba(215, 5, 5, 0.822);
+    color:white;
+    padding: 6px 15px 6px 15px;
+    border-radius: 4px;
+}
+
+.para{
+    margin-right: 1%;
+    padding: 6px 15px 6px 15px;
+    border-radius: 4px;
+}
+
+.para:hover{
+    color:white;
+    background-color: rgba(215, 5, 5, 0.822);
+    color:white;
+    padding: 6px 15px 0px 15px;
+    border-radius: 4px;
+}
+
+/* gallery */
+
+.img1,.img2,.img3, .img4, .img5,.img6,.img7,.img8,.img9{
+    position: relative;
+}
+
+.pop{
+    position:absolute;
+    bottom: 25px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.75);
+    color:white;
+    width: 411px !important;
+}
+
+.img1:hover .pop,
+.img2:hover .pop,
+.img3:hover .pop,
+.img4:hover .pop,
+.img5:hover .pop,
+.img6:hover .pop,
+.img7:hover .pop,
+.img8:hover .pop,
+.img9:hover .pop{
+    display: block;
+    animation-name: popup;
+    animation-duration: 0.25s;
+    transition: all ease-in-out;
+}
+
+@keyframes popup{
+    0%{
+        bottom:10px;
+    }
+    100%{
+        bottom:25px;
+    }
+}
+
+
+/* ========Testimonials========= */
+
+
+.testi{
+    margin-bottom: 30px;
+}
+
+.main-boxs{
+    width:400px;
+    padding:40px;
+    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.01);
+    border-radius: 20px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.wh-card{
+    color:black;
+}
+
+.profile-img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    opacity: inherit;
+    filter:grayscale(0);
+}
+
+.align{
+    text-align: justify;
+}
+
+.quotes{
+    font-size: x-large;
+    opacity: 0.5;
+    color:rgba(255, 0, 0, 0.31);
+}
+
+/* .owl-dot span{
+    border:1px solid rgba(236, 3, 3, 0.87);
+}
+
+.owl-dots .active span{
+    background-color: rgb(231, 10, 10) !important;
+} */
+
+
+/* =========Pricing=========== */
+
+.sup sup{
+    font-size: 25px;
+}
+
+.sup{
+    font-size: 40px;
+}
+
+.pricing-box, .pricing-box1{
+    background-color: rgba(53, 49, 49, 0.608);
+    padding: 40px 0px;
+    border-radius: 5px;
+    width: 420px !important;
+}
+
+.pricing-box1{
+    background-color: rgba(215, 5, 5, 0.747);
+}
+
+strike{
+    color:gray;
+}
+
+.pricing-btn{
+    background: transparent !important;
+    border:2px solid gray !important;
+    color:white !important;
+    padding:10px 30px !important;
+    border-radius: 8px !important;
+}
+
+.pricing-btn:hover{
+    border:2px solid white !important;
+}
+
+/* ===========Frequently Asked Question=========== */

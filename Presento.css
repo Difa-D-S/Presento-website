@@ -475,8 +475,12 @@
 .main-boxs{
     width:400px;
     padding:40px;
-    box-shadow: 0px 2px 35px rgba(0, 0, 0, 0.01);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     border-radius: 20px;
+} 
+
+.testimonial-animate{
+    margin-top: 0px !important;
 }
 
 .profile{
@@ -558,7 +562,19 @@ strike{
     color:rgba(237, 7, 7, 0.74);
 }
 
+.accordion-button:focus {
+    background: none !important;
+    box-shadow: none !important;
+}
+ 
+/* .accordion-header .accordion-button[type="button"]:checked + .accordion-button::after{
+    content: "x";
+} */
 
+.accordion-body{
+    font-size: 15px;
+    padding-top: 3px !important;
+}
 
 /* ========Team======== */
 

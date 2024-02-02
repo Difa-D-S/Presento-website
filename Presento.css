@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
-    animation-timeline: view(650px 0px);
 }
 
 
@@ -147,6 +146,7 @@
     animation-name: zoomIn;
     animation-duration: 10s;
     animation-timing-function: ease;
+    animation-timeline: view(650px 0px);
 }
 
 @keyframes zoomIn {
@@ -202,7 +202,7 @@
 
 .animate p{
     margin-top: 25px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .skew-row{
@@ -257,7 +257,7 @@
 
 /* Counting */
 
-.count, .animate{
+.count{
     text-align: center;
     animation-name: count-animate !important;
     animation-duration: 10s !important;
@@ -265,6 +265,7 @@
     animation-fill-mode: forwards !important;
     margin-top: 6% !important;
     margin-bottom: 7% !important;
+    animation-timeline: view(650px 0px);
 }
 
 @keyframes count-animate{
@@ -301,13 +302,14 @@
 
 
 /* =======Animation========= */
-.boxs-animate, .boxs-animates, .col-animate, .col-animate1, .service-animate, .service-para, .service-col1, .service-col2, .service-col3,
+.boxs-animate, .boxs-animates, .animate, .col-animate, .col-animate1, .service-animate, .service-para, .service-col1, .service-col2, .service-col3,
 .port-animate, .port-para, .select, .port-animate1, .port-animate2, .port-animate3, .testimonial-animate,
 .pricing-animate{
     animation-name: boxs-animate !important;
     animation-duration: 1s !important;
     animation-timing-function: ease !important;
     animation-fill-mode: forwards !important;
+    animation-timeline: view(650px 0px);
 }
 
 @keyframes boxs-animate{
@@ -423,8 +425,18 @@
 
 /* gallery */
 
-.img1,.img2,.img3, .img4, .img5,.img6,.img7,.img8,.img9{
+.animate{
+    overflow: hidden;
     position: relative;
+}
+
+.animate img{
+    background-size: cover;
+    transition: all 1.1s;
+}
+
+.animate:hover img{
+    transform: scale(1.2);
 }
 
 .pop{
@@ -433,18 +445,10 @@
     display: none;
     background-color: rgba(0, 0, 0, 0.75);
     color:white;
-    width: 411px !important;
+    width: 384px;
 }
 
-.img1:hover .pop,
-.img2:hover .pop,
-.img3:hover .pop,
-.img4:hover .pop,
-.img5:hover .pop,
-.img6:hover .pop,
-.img7:hover .pop,
-.img8:hover .pop,
-.img9:hover .pop{
+.animate:hover .pop{
     display: block;
     animation-name: popup;
     animation-duration: 0.25s;
@@ -549,3 +553,153 @@ strike{
 }
 
 /* ===========Frequently Asked Question=========== */
+
+.collapsed:hover{
+    color:rgba(237, 7, 7, 0.74);
+}
+
+
+
+/* ========Team======== */
+
+
+.team{
+    background-color: white;
+    border-radius: 8px;    
+    padding:10px;
+    width: 310px !important;
+    margin: 10px;
+}
+
+.team-col{
+    position: relative;
+}
+
+.white-bg{
+    padding: 20px 15px !important;
+    color:black;
+}
+
+.team:hover .icons{
+    display: block;
+}
+
+.icons{
+    display: none;
+    position: absolute;
+    top:50% !important;
+    left: 70px;
+}
+
+.ico-color i{
+    border-radius: 50%;
+    padding:7px;
+    background-color:rgb(229, 6, 6);
+    font-size: 20px;
+}
+
+.ico-color i:hover{
+    background-color: black;
+    color:red;
+}
+
+.team-para{
+    color:gray;
+    font-size: 15px;
+} 
+
+
+
+/* =========Contact========= */
+
+.location, .email, .call{
+    box-shadow: 0 0 15px rgba(214, 215, 216, 0.6);
+    border-radius: 4px;
+    
+}
+
+.iconholder i{
+    font-size: 25px;
+    color:rgb(225, 17, 17);
+    border-radius: 50% !important;
+    padding:8px 10px !important;
+    border:2px dotted rgba(198, 15, 15, 0.775);
+}
+
+
+.col-form{
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
+    border-radius: 4px;
+}
+
+.form-btn{
+    background-color: rgba(242, 5, 5, 0.838) !important;
+    padding:10px 20px !important;
+    color:white !important;
+}
+
+.form-btn:hover{
+    background-color: rgba(255, 0, 0, 0.689) !important;
+}
+
+
+
+/* ======Footer======= */
+.foot-sec{
+    background-color:rgba(0, 0, 0, 0.874);
+    color:white;
+}
+
+.links{
+    color:rgb(103, 100, 100);
+}
+
+.subscribe{
+    border-width: 0 !important;
+    margin-left:-10px !important;
+    border-radius: 0 4px 4px 0 !important;
+}
+
+
+/* =====Copy Right======= */
+
+.font-size{
+    font-size: 15px;
+}
+
+.footer-icon i{
+    padding:9px;
+    margin:3px;
+    background-color: #82838446;
+    border-radius: 4px;
+}
+
+.footer-icon i:hover{
+    background-color: rgba(255, 0, 0, 0.607);
+}
+
+
+/* =====Arrow====== */
+
+/* arrow */
+
+.arrow{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: rgba(255, 0, 0, 0.826);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom:15px;
+    right:15px;
+}
+
+.arrow i{
+    color:white;
+}
+
+.arrow:hover{
+    background-color: rgba(255, 0, 0, 0.632);
+}

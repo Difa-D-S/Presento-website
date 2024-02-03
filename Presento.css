@@ -415,21 +415,24 @@
 }
 
 .animate img{
-    background-size: cover;
+    
     transition: all 1.1s;
 }
 
 .animate:hover img{
-    background-color: rgba(0, 0, 0, 0.75) !important;
     transform: scale(1.1);
 }
 
 .pop{
     position:absolute;
-    bottom: 25px;
+    top: 0px;
+    left: 0px;
+    padding: 150px 0px 0px 20px;
     display: none;
-    color:black;
-   
+    color:white; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.542);
 }
 
 .animate:hover .pop{

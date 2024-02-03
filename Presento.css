@@ -210,23 +210,6 @@
     transform: skewY(3deg);
 }
 
-/* .animate, .col-animate, .col-animate1{
-    margin-top: 7% !important;
-    animation-name: top !important;
-    animation-duration: 10s !important;
-    animation-timing-function: ease !important;
-    
-}
-
-@keyframes top{
-    from{
-        transform: translateY(400px);
-    }
-    to{
-        transform: translateY(0px); 
-    }
-} */
-
 
 .icon{
     color: rgb(215, 5, 5);
@@ -302,9 +285,9 @@
 
 
 /* =======Animation========= */
-.boxs-animate, .boxs-animates, .animate, .col-animate, .col-animate1, .service-animate, .service-para, .service-col1, .service-col2, .service-col3,
+.boxs-animate, .boxs-animates, .animate, .col-animate, .service-animate, .service-para,
 .port-animate, .port-para, .select, .port-animate1, .port-animate2, .port-animate3, .testimonial-animate,
-.pricing-animate{
+.pricing-animate, .contact-animate{
     animation-name: boxs-animate !important;
     animation-duration: 1s !important;
     animation-timing-function: ease !important;
@@ -399,7 +382,8 @@
 
 .select{
     display: flex !important;
-    margin-left:40%;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 .para-all{
@@ -419,7 +403,7 @@
     color:white;
     background-color: rgba(215, 5, 5, 0.822);
     color:white;
-    padding: 6px 15px 0px 15px;
+    padding: 6px 15px 6px 15px;
     border-radius: 4px;
 }
 
@@ -436,32 +420,20 @@
 }
 
 .animate:hover img{
-    transform: scale(1.2);
+    background-color: rgba(0, 0, 0, 0.75) !important;
+    transform: scale(1.1);
 }
 
 .pop{
     position:absolute;
     bottom: 25px;
     display: none;
-    background-color: rgba(0, 0, 0, 0.75);
-    color:white;
-    width: 384px;
+    color:black;
+   
 }
 
 .animate:hover .pop{
     display: block;
-    animation-name: popup;
-    animation-duration: 0.25s;
-    transition: all ease-in-out;
-}
-
-@keyframes popup{
-    0%{
-        bottom:10px;
-    }
-    100%{
-        bottom:25px;
-    }
 }
 
 
@@ -473,9 +445,10 @@
 }
 
 .main-boxs{
+    margin-right: -10px;
     width:400px;
     padding:40px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.95px 1.95px 2.6px;
     border-radius: 20px;
 } 
 
@@ -510,14 +483,6 @@
     color:rgba(255, 0, 0, 0.31);
 }
 
-/* .owl-dot span{
-    border:1px solid rgba(236, 3, 3, 0.87);
-}
-
-.owl-dots .active span{
-    background-color: rgb(231, 10, 10) !important;
-} */
-
 
 /* =========Pricing=========== */
 
@@ -533,7 +498,7 @@
     background-color: rgba(53, 49, 49, 0.608);
     padding: 40px 0px;
     border-radius: 5px;
-    width: 420px !important;
+    
 }
 
 .pricing-box1{
@@ -567,10 +532,6 @@ strike{
     box-shadow: none !important;
 }
  
-/* .accordion-header .accordion-button[type="button"]:checked + .accordion-button::after{
-    content: "x";
-} */
-
 .accordion-body{
     font-size: 15px;
     padding-top: 3px !important;
@@ -578,11 +539,10 @@ strike{
 
 /* ========Team======== */
 
-
 .team{
     background-color: white;
-    border-radius: 8px;    
-    padding:10px;
+    border-radius: 8px;
+    padding: 10px;    
     width: 310px !important;
     margin: 10px;
 }

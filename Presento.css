@@ -326,7 +326,7 @@
     color:white;
 }
 
-.box:hover{
+.box2:hover{
     color: rgb(215, 5, 5);
 }
 
@@ -496,16 +496,14 @@
 .sup{
     font-size: 40px;
 }
-
-.pricing-box, .pricing-box1{
+.price-box{
     background-color: rgba(53, 49, 49, 0.608);
-    padding: 40px 0px;
     border-radius: 5px;
-    
 }
 
-.pricing-box1{
+.price-box1{
     background-color: rgba(215, 5, 5, 0.747);
+    border-radius: 5px;
 }
 
 strike{
@@ -542,32 +540,30 @@ strike{
 
 /* ========Team======== */
 
-.team{
-    background-color: white;
-    border-radius: 8px;
-    padding: 10px;    
-    width: 310px !important;
-    margin: 10px;
-}
-
-.team-col{
+.imagess{
     position: relative;
 }
 
-.white-bg{
-    padding: 20px 15px !important;
-    color:black;
+.imagess img{
+    border-radius: 10px 10px 0 0 !important;
 }
 
-.team:hover .icons{
+.white-bg{
+    border-radius: 0 0 10px 10px !important;
+    padding: 15px 15px !important;
+    color:black;
+    background-color: white;
+}
+
+.imagess:hover .icons{
     display: block;
 }
 
 .icons{
     display: none;
     position: absolute;
-    top:50% !important;
-    left: 70px;
+    top:70% !important;
+    left: 85px;
 }
 
 .ico-color i{
@@ -581,13 +577,6 @@ strike{
     background-color: black;
     color:red;
 }
-
-.team-para{
-    color:gray;
-    font-size: 15px;
-} 
-
-
 
 /* =========Contact========= */
 
@@ -671,8 +660,9 @@ strike{
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom:15px;
-    right:15px;
+    bottom: 15px;
+    right: 15px;
+    
 }
 
 .arrow i{
@@ -681,4 +671,8 @@ strike{
 
 .arrow:hover{
     background-color: rgba(255, 0, 0, 0.632);
+}
+
+.tea{
+    background-color: white;
 }

@@ -306,7 +306,6 @@
     padding:25px 0px;
     width: 305px !important;
     font-family: sans-serif;
-   
 }
 
 .nav-link.active {
@@ -314,9 +313,16 @@
     color: white;
 }
 
-.active{
-    background-color: none;
-    color: none;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white var(--bs-nav-pills-link-active-color) !important;
+    background-color:red var(--bs-nav-pills-link-active-bg) !important;
+}
+
+.nav1 .nav-link{
+    border-radius: 1px !important;
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
 }
 
 .box-icon{

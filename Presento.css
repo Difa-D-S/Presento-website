@@ -277,13 +277,6 @@
 }
 
 
-/* icon and Box */
-
-.boxs{
-    margin-top: 10% !important;
-}
-
-
 /* =======Animation========= */
 .boxs-animate, .boxs-animates, .animate, .col-animate, .service-animate, .service-para,
 .port-animate, .port-para, .select, .port-animate1, .port-animate2, .port-animate3, .testimonial-animate,
@@ -311,23 +304,28 @@
 .box{
     border:1px solid rgb(125, 121, 121);
     padding:25px 0px;
-    align-items: center;
-    margin: 10px;
-    width: 310px !important;
+    width: 305px !important;
     font-family: sans-serif;
+   
+}
+
+.nav-link.active {
+    background-color: rgb(215, 5, 5);
+    color: white;
+}
+
+.active{
+    background-color: none;
+    color: none;
 }
 
 .box-icon{
     font-size: 35px;
 }
 
-.box1{
-    background-color: rgb(215, 5, 5);
-    color:white;
-}
-
-.box2:hover{
-    color: rgb(215, 5, 5);
+.box:hover{
+    background-color: rgb(215, 5, 5) !important;
+    color:white !important;
 }
 
 

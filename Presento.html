@@ -277,19 +277,25 @@
 <!-- icon and box -->
 
 <section>
-  <div class="container boxs boxs-animate">
-      <div class="row">
-
-          <div class="col-3 d-flex box1 box">
-            <div>
-            <i class="fa-solid fa-wifi me-3 box-icon"></i>
-            </div>
-            <div>
-                <h5><b>Modi sit est dela pireda nest</b></h5>
-            </div>
-        </div>
-
-        <div class="col-3 d-flex box2 box">
+  <div class="container boxs-animate">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active box" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" 
+        role="tab" aria-controls="pills-home" aria-selected="true">
+        <div class="d-flex align-items-center">
+          <div>
+          <i class="fa-solid fa-wifi me-2 box-icon"></i>
+          </div>
+          <div>
+              <h5><b>Modi sit est dela pireda nest</b></h5>
+          </div>
+      </div>
+      </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link box" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" 
+        role="tab" aria-controls="pills-profile" aria-selected="false">
+        <div class="d-flex align-items-center">
           <div>
           <i class="fa-solid fa-qrcode me-3 box-icon"></i>
           </div>
@@ -297,59 +303,136 @@
               <h5><b>Unde praesenti mara setra le</b></h5>
           </div>
       </div>
-
-      <div class="col-3 d-flex box2 box">
-        <div>
-        <i class="fa-solid fa-sun me-3 box-icon"></i>
-        </div>
-        <div>
-            <h5><b>Pariatur explica nitro dela</b></h5>
-        </div>
-    </div>
-
-    <div class="col-3 d-flex box2 box">
-      <div>
-      <i class="fa-solid fa-store me-3 box-icon"></i>
+      </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link box" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" 
+        role="tab" aria-controls="pills-contact" aria-selected="false">
+        <div class="d-flex align-items-center">
+          <div>
+          <i class="fa-solid fa-sun me-3 box-icon"></i>
+          </div>
+          <div>
+              <h5><b>Pariatur explica nitro dela</b></h5>
+          </div>
       </div>
-      <div>
-          <h5><b>Nostrum qui dile node</b></h5>
+      </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link box" id="pills-node-tab" data-bs-toggle="pill" data-bs-target="#pills-node" type="button" 
+        role="tab" aria-controls="pills-node" aria-selected="false">
+        <div class="d-flex align-items-center">
+          <div>
+          <i class="fa-solid fa-store me-3 box-icon"></i>
+          </div>
+          <div>
+              <h5><b>Nostrum qui dile node</b></h5>
+          </div>
       </div>
-  </div>
-          
-      </div>
-  </div>
-</section>
+      </button>
+      </li>
+    </ul>
 
 
-<!-- Content and Image -->
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+        <div class="row mt-4 boxs-animates">
 
-
-<section>
-  <div class="container">
-  <div class="row mt-4 boxs-animates">
-
-    <div class="col-lg-6 content">
-      <h2>Voluptatem dignissimos provident quasi corporis coluptates</h2>
-      <i class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmpd tempor incident ut labore et dolore magna aliqua.</i>
-      <p class="mt-4">
-        <i class="fa-solid fa-check-double me-2 text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-  
-      <p></p><i class="fa-solid fa-check-double me-2 text-danger"></i>Duis aute irure dolor in reprehedderit in voluptate velit</p>
-       
-      <p><i class="fa-solid fa-check-double me-2 text-danger"></i></i>Ullamco laboris nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate trideta storacalaperda</p>
+          <div class="col-lg-6 content">
+            <h2>Voluptatem dignissimos provident quasi corporis coluptates</h2>
+            <i class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmpd tempor incident ut labore et dolore magna aliqua.</i>
+            <p class="mt-4">
+              <i class="fa-solid fa-check-double me-2 text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        
+            <p></p><i class="fa-solid fa-check-double me-2 text-danger"></i>Duis aute irure dolor in reprehedderit in voluptate velit</p>
+             
+            <p><i class="fa-solid fa-check-double me-2 text-danger"></i></i>Ullamco laboris nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate trideta storacalaperda</p>
+            
+            <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+          </div>
       
-      <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+          <div class="col-lg-6">
+            <img src="./Image/tabs-1.jpg" alt="Group" width="100%" height="100%">
+          </div>
+      
+          </div>
+      </div>
+      
+      
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+        <div class="row mt-4 boxs-animates">
+
+          <div class="col-lg-6 content">
+            <h2>Voluptatem dignissimos provident quasi corporis coluptates</h2>
+            <i class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmpd tempor incident ut labore et dolore magna aliqua.</i>
+            <p class="mt-4">
+              <i class="fa-solid fa-check-double me-2 text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        
+            <p></p><i class="fa-solid fa-check-double me-2 text-danger"></i>Duis aute irure dolor in reprehedderit in voluptate velit</p>
+             
+            <p><i class="fa-solid fa-check-double me-2 text-danger"></i></i>Ullamco laboris nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate trideta storacalaperda</p>
+            
+            <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+          </div>
+      
+          <div class="col-lg-6">
+            <img src="./Image/tabs-1.jpg" alt="Group" width="100%" height="100%">
+          </div>
+      
+          </div>
+      </div>
+      
+      
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+        <div class="row boxs-animates">
+
+          <div class="col-lg-6 content">
+            <h2>Voluptatem dignissimos provident quasi corporis coluptates</h2>
+            <i class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmpd tempor incident ut labore et dolore magna aliqua.</i>
+            <p class="mt-4">
+              <i class="fa-solid fa-check-double me-2 text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        
+            <p></p><i class="fa-solid fa-check-double me-2 text-danger"></i>Duis aute irure dolor in reprehedderit in voluptate velit</p>
+             
+            <p><i class="fa-solid fa-check-double me-2 text-danger"></i></i>Ullamco laboris nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate trideta storacalaperda</p>
+            
+            <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+          </div>
+      
+          <div class="col-lg-6">
+            <img src="./Image/tabs-1.jpg" alt="Group" width="100%" height="100%">
+          </div>
+      
+          </div>
+      </div>
+      
+      
+      <div class="tab-pane fade" id="pills-node" role="tabpanel" aria-labelledby="pills-node-tab" tabindex="0">
+        <div class="row mt-4 boxs-animates">
+
+          <div class="col-lg-6 content">
+            <h2>Voluptatem dignissimos provident quasi corporis coluptates</h2>
+            <i class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmpd tempor incident ut labore et dolore magna aliqua.</i>
+            <p class="mt-4">
+              <i class="fa-solid fa-check-double me-2 text-danger"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        
+            <p></p><i class="fa-solid fa-check-double me-2 text-danger"></i>Duis aute irure dolor in reprehedderit in voluptate velit</p>
+             
+            <p><i class="fa-solid fa-check-double me-2 text-danger"></i></i>Ullamco laboris nisi ut aliquid ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate trideta storacalaperda</p>
+            
+            <p class="mt-4">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehendent in voluptate velit esse cillum dolor eu fugiat nulla pariatur.</p>
+          </div>
+      
+          <div class="col-lg-6">
+            <img src="./Image/tabs-1.jpg" alt="Group" width="100%" height="100%">
+          </div>
+      
+          </div>
+      </div>
     </div>
 
-    <div class="col-lg-6">
-      <img src="./Image/tabs-1.jpg" alt="Group" width="100%" height="100%">
-    </div>
-
-    </div>
-  </div>
   </div>
   </section>
-
 
   <!-- Service -->
 
@@ -1115,8 +1198,6 @@
     </div>
 </section>
   
-
-
 
 
 

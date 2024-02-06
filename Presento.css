@@ -313,11 +313,6 @@
     color: white;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: white var(--bs-nav-pills-link-active-color) !important;
-    background-color:red var(--bs-nav-pills-link-active-bg) !important;
-}
-
 .nav1 .nav-link{
     border-radius: 1px !important;
     border: 1px solid gray;

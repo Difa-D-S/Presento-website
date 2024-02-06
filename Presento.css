@@ -251,6 +251,10 @@
     animation-timeline: view(650px 0px);
 }
 
+.count-box .counter-count{
+    font-weight:900;
+}
+
 @keyframes count-animate{
     from{
         transform: translateY(400px);

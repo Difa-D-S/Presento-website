@@ -5,7 +5,6 @@
     font-family: sans-serif;
 }
 
-
 /* Navbar */
 
 .bg-white{
@@ -315,6 +314,12 @@
 .nav-link.active {
     background-color: rgb(215, 5, 5);
     color: white;
+}
+
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: white !important;
+    --bs-nav-pills-link-active-bg: rgb(215, 5, 5) !important;
 }
 
 .nav1 .nav-link{
